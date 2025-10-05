@@ -1,0 +1,193 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: radial-gradient(circle at top left, #0d1117, #05070b);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background 0.4s ease, box-shadow 0.4s ease;
+  z-index: 1000;
+}
+
+.navbar.scrolled {
+  background: rgba(17, 24, 39, 0.9);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #00baff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: #00e0ff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 35px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #00baff;
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #00baff;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* ===== Login Section ===== */
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #0a0f1a, #141b29);
+  background-size: 200% 200%;
+  animation: gradientShift 8s ease infinite;
+  padding-top: 60px;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.login-container {
+  background: rgba(17, 24, 39, 0.85);
+  padding: 45px 40px;
+  border-radius: 16px;
+  width: 360px;
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 170, 255, 0.25);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+.login-container h2 {
+  margin-bottom: 10px;
+  color: #00baff;
+  font-weight: 600;
+}
+
+.login-container p {
+  color: #aaa;
+  margin-bottom: 30px;
+  font-size: 0.95em;
+}
+
+/* ===== Input Fields ===== */
+.input-group {
+  text-align: left;
+  margin-bottom: 22px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 0.9em;
+  color: #bbb;
+  letter-spacing: 0.3px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: rgba(31, 41, 55, 0.9);
+  color: #fff;
+  font-size: 1em;
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.input-group input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #00baff;
+  transform: scale(1.02);
+}
+
+/* ===== Button ===== */
+.btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #00baff, #008cff);
+  color: #fff;
+  font-weight: 600;
+  font-size: 1em;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(0, 186, 255, 0.6);
+}
+
+/* ===== Sign-up Text ===== */
+.signup-text {
+  margin-top: 25px;
+  font-size: 0.9em;
+  color: #bbb;
+}
+
+.signup-text a {
+  color: #00baff;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
