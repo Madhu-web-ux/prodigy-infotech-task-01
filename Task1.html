@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NovaGrid — Smart Cloud Tools</title>
+  <meta name="description" content="NovaGrid — fast, reliable cloud tools for modern teams." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- FIXED NAV -->
+  <header class="site-header">
+    <nav class="navbar container">
+      <a class="brand" href="#home">NovaGrid</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a class="btn" href="#">Login</a>
+        <a class="btn primary" href="#contact">Get Started</a>
+      </div>
+
+      <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- MOBILE NAV (clone) -->
+  <div class="mobile-overlay" id="mobile-overlay" aria-hidden="true">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="mobile-cta">
+      <a class="btn" href="login.html">Login</a>
+      <a class="btn primary" href="#contact">Get Started</a>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-inner container">
+        <h1>Build faster with NovaGrid</h1>
+        <p class="sub">Cloud-native developer tools that scale — deploy, monitor, and ship with confidence.</p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#features">Try Free</a>
+          <a class="btn ghost" href="#pricing">See Pricing</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section id="features" class="section">
+      <div class="container grid-3">
+        <div class="card">
+          <h3>Fast Deployments</h3>
+          <p>One-click deploys with atomic rollbacks and instant logs.</p>
+        </div>
+        <div class="card">
+          <h3>Smart Monitoring</h3>
+          <p>Realtime metrics, alerts, and anomaly detection.</p>
+        </div>
+        <div class="card">
+          <h3>Team Controls</h3>
+          <p>Role-based access, audit logs, and easy onboarding.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing" class="section alt">
+      <div class="container">
+        <h2 class="center">Pricing</h2>
+        <div class="grid-3">
+          <div class="pricing-card">
+            <h4>Starter</h4>
+            <div class="price">Free</div>
+            <ul>
+              <li>Basic deploys</li>
+              <li>Community support</li>
+            </ul>
+            <a class="btn" href="#contact">Get Started</a>
+          </div>
+
+          <div class="pricing-card featured">
+            <h4>Pro</h4>
+            <div class="price">₹499/mo</div>
+            <ul>
+              <li>Unlimited projects</li>
+              <li>Priority support</li>
+            </ul>
+            <a class="btn primary" href="#contact">Start Free Trial</a>
+          </div>
+
+          <div class="pricing-card">
+            <h4>Enterprise</h4>
+            <div class="price">Custom</div>
+            <ul>
+              <li>SAML & audit logs</li>
+              <li>Dedicated support</li>
+            </ul>
+            <a class="btn" href="#contact">Contact Sales</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section id="testimonials" class="section">
+      <div class="container">
+        <h2 class="center">What teams say</h2>
+        <div class="testimonials">
+          <blockquote class="testi">"NovaGrid cut our deploy time by 70% — it's reliable and fast."<footer>— Priya, CTO @ FinFlow</footer></blockquote>
+          <blockquote class="testi">"Support is top-notch and they actually listen to feedback."<footer>— Rohit, DevOps lead</footer></blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <div class="container">
+        <h2 class="center">Get in touch</h2>
+        <div class="contact-grid">
+          <form id="contact-form" class="contact-form">
+            <label>Full name<input type="text" name="name" required></label>
+            <label>Email<input type="email" name="email" required></label>
+            <label>Message<textarea name="message" rows="5" required></textarea></label>
+            <button class="btn primary" type="submit">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <p>Prefer email? hello@novagrid.example</p>
+            <p>Follow us on:</p>
+            <p class="muted">Twitter · LinkedIn · GitHub</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container center muted">© 2025 NovaGrid — Built with care.</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
